@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+
+<body>
+    <h1>Create a HTML Form : </h1>
+    <p>In HTML, you can create a form using the &lt;form&gt; tag. A form is used to collect user input. The form can
+        contain various types of input elements such as text fields, checkboxes, radio buttons, and submit buttons.</p>
+    <h2>Example of a HTML Form:</h2>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF6FX4gIe3V9QnGH45rm3-x5xfES8cPibYcg&s"
+        alt="reference form image">
+    <p>The above is the reference form image. That i am going to use as a reference for creating the form.</p>
+
+    <form>
+        <fieldset>
+            <legend>Employee Information</legend>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+            <br><br>
+            <label for="lastName">Last Name: </label>
+            <input type="text" name="lastName" id="lastName">
+            <br><br>
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" id="genderMale" value="male">
+            <label for="genderMale">Male</label>
+            <input type="radio" name="gender" id="genderFemale" value="female">
+            <label for="genderFemale">Female</label>
+            <br><br>
+            <label for="employeeId">Employee ID: </label>
+            <input type="number" name="employeeId" id="employeeId">
+            <br><br>
+            <label for="department">Department: </label>
+            <select name="department" id="department">
+                <option value=" ">Choose the Department.</option>
+                <option value="hr">HR</option>
+                <option value="it">IT</option>
+                <option value="finance">Finance</option>
+                <option value="marketing">Marketing</option>
+            </select>
+            <br><br>
+            <label for="phoneNumber">Phone Number: </label>
+            <input type="tel" name="phoneNumber" id="phoneNumber">
+            <br><br>
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>
